@@ -1,0 +1,289 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14344
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module HammingDecoderSEC8 [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingDecoder.sv:96]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/Top.sv:22]
+	Parameter CWSIZE bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SevenSegmentController' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/SevenSegmentController.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'decoder3_8' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/decoder3_8.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'decoder3_8' (1#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/decoder3_8.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/SevenSegDecoder.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (2#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/SevenSegDecoder.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegmentController' (3#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/SevenSegmentController.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'HammingEncoderSECDED8' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingEncoder.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'HammingEncoderSEC8' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingEncoder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'HammingEncoderSEC8' (4#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingEncoder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'HammingEncoderSECDED8' (5#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingEncoder.sv:40]
+WARNING: [Synth 8-689] width (13) of port connection 'dataOut' does not match port width (14) of module 'HammingEncoderSECDED8' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/Top.sv:65]
+INFO: [Synth 8-6157] synthesizing module 'HammingDecoderSECDED8' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingDecoder.sv:148]
+INFO: [Synth 8-6157] synthesizing module 'HammingDecoderSEC8' [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingDecoder.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'HammingDecoderSEC8' (6#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingDecoder.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'HammingDecoderSECDED8' (7#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingDecoder.sv:148]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (8#1) [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/Top.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1005.816 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc]
+WARNING: [Vivado 12-584] No ports matched 'r'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hsync'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vsync'. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1005.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     13 Bit         XORs := 1     
+	   2 Input     12 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 2     
+	  12 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	  13 Input      1 Bit         XORs := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1005.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1012.730 ; gain = 6.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |     6|
+|3     |LUT1   |     2|
+|4     |LUT2   |     9|
+|5     |LUT3   |     9|
+|6     |LUT4   |    40|
+|7     |LUT5   |    10|
+|8     |LUT6   |    40|
+|9     |MUXF7  |     7|
+|10    |FDRE   |   108|
+|11    |IBUF   |    17|
+|12    |OBUF   |    37|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1020.863 ; gain = 15.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.863 ; gain = 15.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1020.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1030.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 15 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1030.516 ; gain = 24.699
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 18:18:24 2021...
