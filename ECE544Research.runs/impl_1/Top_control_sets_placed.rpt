@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Nov 26 18:18:48 2021
-| Host         : DESKTOP-5PBDRV3 running 64-bit major release  (build 9200)
+| Date         : Mon Dec  6 11:25:06 2021
+| Host         : SENG-214-36 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
 | Device       : xc7a100t
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             108 |           29 |
+| No           | No                    | No                     |             108 |           32 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -73,9 +73,9 @@ Table of Contents
 +----------------------+---------------+------------------+------------------+----------------+--------------+
 |     Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------+---------------+------------------+------------------+----------------+--------------+
-|  p_0_in3_in          |               |                  |                3 |              3 |         1.00 |
+|  p_0_in3_in          |               |                  |                2 |              3 |         1.50 |
 |  CLK100MHZ_IBUF_BUFG |               |                  |                6 |             22 |         3.67 |
-|  p_1_in4_in_BUFG     |               |                  |                7 |             33 |         4.71 |
+|  p_1_in4_in_BUFG     |               |                  |               11 |             33 |         3.00 |
 |  latch_BUFG          |               |                  |               13 |             50 |         3.85 |
 +----------------------+---------------+------------------+------------------+----------------+--------------+
 

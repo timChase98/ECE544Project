@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.runs/synth_1/Top.tcl"
+  variable script "U:/388TA/ECE544Project/ECE544Research.runs/synth_1/Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,32 +70,29 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.cache/wt [current_project]
-set_property parent.project_path C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.xpr [current_project]
+set_property webtalk.parent_dir U:/388TA/ECE544Project/ECE544Research.cache/wt [current_project]
+set_property parent.project_path U:/388TA/ECE544Project/ECE544Research.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.cache/ip [current_project]
+set_property ip_output_repo u:/388TA/ECE544Project/ECE544Research.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingDecoder.sv
-  C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/HammingEncoder.sv
-  C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/SevenSegDecoder.sv
-  C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/SevenSegmentController.sv
-  C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/imports/new/decoder3_8.sv
-  C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/sources_1/new/Top.sv
+  U:/388TA/ECE544Project/ECE544Research.srcs/sources_1/new/HammingDecoder.sv
+  U:/388TA/ECE544Project/ECE544Research.srcs/sources_1/new/HammingEncoder.sv
+  U:/388TA/ECE544Project/ECE544Research.srcs/sources_1/imports/new/SevenSegDecoder.sv
+  U:/388TA/ECE544Project/ECE544Research.srcs/sources_1/imports/new/SevenSegmentController.sv
+  U:/388TA/ECE544Project/ECE544Research.srcs/sources_1/imports/new/decoder3_8.sv
+  U:/388TA/ECE544Project/ECE544Research.srcs/sources_1/new/Top.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -106,8 +103,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc
-set_property used_in_implementation false [get_files C:/Users/tmc/Documents/vivado/ECE544Research/ECE544Research.srcs/constrs_1/imports/new/io.xdc]
+read_xdc U:/388TA/ECE544Project/ECE544Research.srcs/constrs_1/imports/new/io.xdc
+set_property used_in_implementation false [get_files U:/388TA/ECE544Project/ECE544Research.srcs/constrs_1/imports/new/io.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
